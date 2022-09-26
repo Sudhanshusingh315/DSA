@@ -8,7 +8,7 @@ using namespace std;
 
 int main ()
 {
-  
+  //cout :- helps to print   
   cout<<"I like pizza"<<endl; 
 
   return 0;
