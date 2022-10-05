@@ -1,5 +1,6 @@
 // Bitwise Operator and for Loops
 
+
 #include <iostream>
 using namespace std;
 int main ()
@@ -21,6 +22,9 @@ int main ()
   cout<<"19<<1 "<<(19<<1)<<endl;
   cout<<"21<<2 "<<(21<<2)<<endl;
 
+  cout<<"----------------"<<endl;
+
 
   return 0;
 }
+
