@@ -24,6 +24,65 @@ int main ()
 
   cout<<"----------------"<<endl;
 
+  
+
+  // for(int i=0 (initialization); i<=n (condition) ; i++ (updation))
+
+  for(int i=0 ; i<=5 ; i++)
+  {
+    cout<<i<<endl;
+  }
+
+  // sum for all numbers for 1->namespace 
+  int j; 
+  int sum=0;
+  for(j =1 ; j<=5 ;j++) 
+  { 
+    sum += j;
+  }
+
+  cout<<"The sum of all the number for 1 to 5 "<<sum<<endl;
+  
+  // fibonacci series
+  
+  int n=10;
+  int first = 0;
+  int second = 1;
+  
+  for(int c=1 ; c<= n ; c++)
+  {
+      int nextNumber = first + second;
+      cout<<nextNumber<<" ";
+      first = second;
+      second = nextNumber;
+      
+  
+  }
+
+
+  // Prime Number with forloop
+
+  int Range =0;
+  cout<<"Enter the ranger upto with you want to check the prime numeber";
+  cout<<endl;
+
+  cin>>Range;
+  
+  bool isPrime = 1;
+
+  for(int n =2 ; n<Range; Range++ )
+  {
+    if(Range%n==0)
+    {
+      cout<<"The number is not a prime number"<<endl;
+      isPrime =0; 
+      break;
+    }
+    
+  }
+
+  if(isPrime==1)
+    cout<<"not a PrimeNumber"<<endl;
 
   return 0;
 }
