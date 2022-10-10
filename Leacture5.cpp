@@ -84,6 +84,26 @@ int main ()
   if(isPrime==1)
     cout<<"not a PrimeNumber"<<endl;
 
-  return 0;
+  // Subtract the Product and Sum of Digits of an interger (Leetcode) 
+  // 245 = Product - Sum
+  int Product = 1;
+  int Sum = 0;
+  int Number = 0;
+  cout<<"Enter the Number "<<endl;
+  cin>>Number;
+  while (Number!=0)
+  {  
+    int Digit = Number%10;
+    Product = Product*Digit;
+    Sum = Sum + Digit;
+    Number = Number/10;
+  } 
+  cout<<"Product "<<Product << " and the Sum is "<<Sum;
+  
+  int answer = Product - Sum;
+  cout<<"answer "<<answer;
+
+  return 0; 
+
 }
 
