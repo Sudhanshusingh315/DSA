@@ -84,6 +84,7 @@ int main ()
   if(isPrime==1)
     cout<<"not a PrimeNumber"<<endl;
 
+  //Problem 1:
   // Subtract the Product and Sum of Digits of an interger (Leetcode) 
   // 245 = Product - Sum
   int Product = 1;
@@ -101,7 +102,34 @@ int main ()
   cout<<"Product "<<Product << " and the Sum is "<<Sum;
   
   int answer = Product - Sum;
-  cout<<"answer "<<answer;
+  cout<<"answer "<<answer<<endl;
+
+
+
+
+
+  //Problem 2:
+  //Number of 1 bit :- given an unsigned integer , calculate the number of 1's in that bit
+  int numberOfBits = 0;
+  cout<<"Enter the number you want to find the bits of"<<endl;
+  cin>>numberOfBits;
+  int count = 0;
+  while (numberOfBits!=0) {
+    if(numberOfBits & 1)
+    {
+      count++;
+
+        
+    }
+     numberOfBits=numberOfBits<<1;
+
+
+  }
+  
+  cout<<count<<endl;
+
+
+
 
   return 0; 
 
