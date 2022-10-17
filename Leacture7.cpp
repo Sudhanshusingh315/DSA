@@ -1,5 +1,6 @@
 // Problems solving with leetcode 
-
+#include <climits>
+#include <cstdint>
 #include <iostream>
 using namespace std;
 int main()
@@ -22,6 +23,7 @@ int main()
     numberToBeReversed = numberToBeReversed/10;
   }
   cout<<"answer"<<answer<<endl;
+
 
 
   return 0;
