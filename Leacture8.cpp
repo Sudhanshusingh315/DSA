@@ -1,1 +1,2 @@
-// Will be changed soon
+// Switch cases and Introduction to functions
+
