@@ -1,4 +1,5 @@
 // Given an array print the largest number in the array 
+#include <algorithm>
 #include <climits>
 #include <cstdint>
 #include <iostream>
@@ -10,15 +11,17 @@ using namespace std;
 int getmin(int nump[], int size)
 {
 
- int min=INT_MAX;
+ int min=INT_MIN;
+
+
  for(int i=0; i<size ;i++)
  {
-    if(nump[i]<min)
+  /*  if(nump[i]<min)
     {
       min = nump[i];
 
     }
-
+  */
  }
 
 
@@ -28,20 +31,23 @@ int getmin(int nump[], int size)
 
 int getmax(int nump[], int size)
 {
-  int max=INT_MAX;
+  int maxi=INT_MAX;
   for(int i=0; i<size ;i++)
   {
-    if(nump[i] > max)
+    // This is who you can fine the maximun of two 
+    maxi = max(maxi, nump[i]);
+
+   /* if(nump[i] > max)
     {
 
         max = nump[i];
 
     }
-
+    */
   }
 
 
-    return max; 
+    return maxi; 
 
 }
 
