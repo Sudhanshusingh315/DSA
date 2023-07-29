@@ -27,7 +27,7 @@ int main()
   update(arr, size);
 
 
-
+  
   cout<<"The is insid the int main function"<<endl; 
 
   for (int i=0; i<size ; i++) {

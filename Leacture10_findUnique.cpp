@@ -13,7 +13,7 @@ int findUnique(int arr[], int size)
 }
 int main ()
 {
-  int arr[5] = {2,7,6,7,2};   
+   int arr[5] = {2,7,6,7,2};   
   int size = 5;
   cout<<findUnique(arr, size);
   return 0; 
