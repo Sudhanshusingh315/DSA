@@ -1,3 +1,5 @@
+// Spoce of an Array
+
 #include <iostream>
 using namespace std;
 

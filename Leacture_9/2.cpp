@@ -1,4 +1,7 @@
+// Maximum and Minimum in arrays 
+
 // Given an array print the largest number in the array 
+
 #include <algorithm>
 #include <climits>
 #include <cstdint>
