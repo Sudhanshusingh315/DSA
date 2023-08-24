@@ -1,29 +1,29 @@
-// part 2 :- patter printing programs
-
+// Pattern 2 
 /*
 
-*****
-****
-***
-**
-*
+
+* 
+* * 
+* * *
+* * * *
+* * * * *
+* * * * * *
+
 
 */
 
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
+
 int main()
 {
-  int n=1;
-  
-  for(int i=5; i>=n; i--)
-  {
-    for(int j = 1 ;j<=i ; j++) 
-      {
-        cout<<"*";
- 
-      }
-    cout<<endl;
-  }
-  return 0;
+    for(int i=0 ; i<6 ; i++)
+    {
+       for(int j=0 ; j<i ; j++) 
+       {
+            cout<<"*";
+       }
+       cout<<endl;
+    }
+    return 0;       
 }

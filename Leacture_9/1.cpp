@@ -1,6 +1,6 @@
-// 1
+//1
 
-//Introduction to arrays
+// Introduction to arrays
 
 
 #include <iostream>
@@ -23,14 +23,7 @@ void Printingarray(int arr[], int size)
         cout<<arr[i];
 
     }
-
-
-
-
 }
-
-
-
 int main()
 {
   int number[15]; 
