@@ -25,17 +25,18 @@
 - [x] Leacture_2 (Writing first program)
 - [x] Leacture_3 (if-else)
 - [x] Leacture_4 (Pattern)
-  - [ ] Pattern solving problems(kinda suck at it) 
+  - [x] Pattern solving problems(kinda suck at it) 
+  - [x] mostly done with patters
 - [x] Leacture_5 (Bitwise Operators)
   - [ ] Will do this in more detail
 - [x] Leacture_6 (Binary & Decimal Number sys)
 - [x] Leacture_7 (Leetcode Problem)
 - [x] Leacture_8 (Switch statement)
 - [x] Leacture_9 (Introduction to Arrays)
-- [] Leacture_10 ()
-- [] Leacture_11
-- [] Leacture_12
-- [] Leacture_13
+- [ ] Leacture_10 ()
+- [ ] Leacture_11
+- [ ] Leacture_12
+- [ ] Leacture_13
 - [] Leacture_14
 - [] Leacture_15
 - [] Leacture_16

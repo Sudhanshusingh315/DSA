@@ -1,83 +1,46 @@
+// 2
+
 // Maximum and Minimum in arrays 
 
 // Given an array print the largest number in the array 
 
-#include <algorithm>
-#include <climits>
-#include <cstdint>
-#include <iostream>
-#include <new>
+#include<bits/stdc++.h>
 using namespace std;
 
-
-
-int getmin(int nump[], int size)
-{
-
- int min=INT_MIN;
-
-
- for(int i=0; i<size ;i++)
- {
-  /*  if(nump[i]<min)
-    {
-      min = nump[i];
-
+int getmin(int num[], int size)
+{ 
+  int minimun = num[0];
+  for(int i=0;i<size;i++){
+  //   if(num[i]< min){
+  //     min = num[i];
+      minimun = min(minimun,num[i]);
     }
-  */
- }
-
-
-   return min;
-
+  // }
+  return minimun;
 }
 
-int getmax(int nump[], int size)
+int getmax(int num[],int size)
 {
-  int maxi=INT_MAX;
-  for(int i=0; i<size ;i++)
-  {
-    // This is who you can fine the maximun of two 
-    maxi = max(maxi, nump[i]);
-
-   /* if(nump[i] > max)
-    {
-
-        max = nump[i];
-
+  int max = num[0];
+  for(int i=0; i<size;i++){
+    if(num[i]>max){
+      max = num[i];
     }
-    */
   }
-
-
-    return maxi; 
-
+  return max;
 }
 
 
-
-
-int main()
-{
-
-  int size=0;
-  cin>>size;
-
-  int array[100];
+int main(){
   
-  for(int i=0; i<size ;i++)
+  int size;
+  int num[100];
+  cin>>size;
+  for(int i=0;i<size;i++)
   {
-    cin>>array[i];
-
+    cin>>num[i];
   }
 
-  cout<<"The maximum value of the array is "<<getmax(array, size)<<endl;
-  cout<<"The minimum value of the array is "<<getmin(array, size)<<endl;
-    
-
-
-
-
-
-  return 0;
-}
+  cout<<"Maximum of the array is "<<getmax(num,size)<<endl;
+  cout<<"Minimum of the array is "<<getmin(num,size)<<endl;
+} 
