@@ -1,41 +1,36 @@
-// Revers of an array 
+// Reversing an array
 
-#include <iostream>
-#include <type_traits>
-#include <utility>
+#include<bits/stdc++.h>
 using namespace std;
-void reversingArray(int arr[], int size)
-{
-   int start = 0;
-   int end  = size-1;
 
-   while(start<=end) 
-   {
-      swap(arr[start],arr[end]);
-      start++;
-      end--;
+void reverse(int arr[], int size){
+    int start = 0;
+    int end = size-1;
 
-   }
-
-}
-void printTheArray(int arr[], int size)
-{
-  for(int i =0; i<size;i++) 
-  {
-    cout<<arr[i]<<",";
-  }
-
+    while (start<=end)
+    {
+       swap(arr[start] , arr[end]);
+       start++; 
+       end--;
+    }
+    
 }
 
-int main()
-{
-  int arr[6] = {1,4,0,5,-2,15}; 
-  int size = 6;
-  cout<<"Printing the array "<<endl;
-  printTheArray(arr,size );
-  
-  reversingArray(arr,size);
-  cout<<"After the reversing the Array"<<endl;
-  printTheArray(arr, size);
-  return 0;
+void printarry(int arr[], int size){
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int main(){
+    int arr[6] = {1,3,2,4,5,6};
+    int brr[5] = {1,2,3,4,5};
+
+    reverse(arr,6);
+    reverse(brr,5);
+
+    printarry(arr,6);
+    printarry(arr,5);
+    return 0;   
 }
