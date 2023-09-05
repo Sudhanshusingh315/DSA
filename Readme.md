@@ -21,6 +21,7 @@
 # Checklist of the topics i've done
 
 - [x] Basics
+- [] Basic maths in c++
 - [x] Leacture_1 (flow charts and algo)
 - [x] Leacture_2 (Writing first program)
 - [x] Leacture_3 (if-else)
